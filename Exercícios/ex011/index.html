@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Tente abrir o site em dispositivos diferentes ou abaixe e aumnte a tela do seu computador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Rproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir um audio em html5</p>
+    <audio src="media/Tell Me That I Can't (Clean) - NEFFEX.mp3" controls autoplay></audio>
+    <!--FORMAT COMPATÍVEIS: MP3 WAV OGG-->
+    
+    <!--Melhor compatibilidade: ele vai tentar carregar em ordem de lista, só temos esses 3 formatos de auduio.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.mp3" type="audio/ogg">
+        <source src="media/guanacast-33.mp3" type="audio/wav">
+        <!--se não carregar-->
+        <p>Infelizmente seu navegador não conseguiu carregar nenhum audio clique aqui para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+</html>

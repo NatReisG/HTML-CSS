@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+/* 
+HTML = id igual HTML = # (um ele por pág)
+HTML = class / CSS = . (multiplos ele por pág)
+*/
+body {
+    background-color: rgb(158, 231, 231);
+    font-family: sans-serif;
+}
+h1 {
+    color: rgb(56, 97, 185);
+}
+h1#main {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(32, 78, 78);
+    color: white;
+}
+.sec {
+    font-size: 33;
+    font-weight: lighter;
+}
+.básico {
+    color: rgba(137, 43, 226, 0.623);
+    font-weight: lighter;
+}
+.intermediário {
+    color: rgb(32, 12, 122);
+    font-weight: lighter;
+}
+.avançado {
+    color: rgb(255, 255, 0);
+    font-weight: lighter;
+}
+.destaque {
+    background-color: rgba(172, 172, 24, 0.829);
+}
