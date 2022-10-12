@@ -7,6 +7,11 @@
     <title>Cordel</title>
     <link rel="stylesheet" href="style.css">
     <style>
+                :root {
+            --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+            --fonte2: 'Passion One', cursive;
+            --fonte3: 'Sriracha', cursive;
+        }
         body{
             margin: 0px;
             /*
@@ -17,10 +22,18 @@
             background-attachment: fixed;
             */
 
-            background: black url(https://i.natgeofe.com/n/cf1ed3d7-ff55-4ad3-96bd-4fe617b32b97/polarbear-ice-greenland.jpg) center center no-repeat fixed;
+            background: black center center no-repeat fixed;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
 
+        }
+        *{
+            font-size: 1em;
+            margin: 0px;
+            padding: 0px;
+        }
+        section > p{
+            padding-bottom: 2em;
         }
         #cabeca{ 
             position: relative;
@@ -81,17 +94,38 @@
             margin: 0px;
             max-width: 400px;
         }                 
-        .transp{
-
-            background-color: rgba(red, green, blue, alpha);
+        section.transp{
+            
             padding: 35px 0px 35px 20px;
         }
-
+        section#img1{
+            background-image: url(Conteudo/Imagens/goku_petista.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+              /*
+            background-image: url(https://i.natgeofe.com/n/cf1ed3d7-ff55-4ad3-96bd-4fe617b32b97/polarbear-ice-greenland.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            */
+        }
+        section#img2{
+            background-image: url(Conteudo/Imagens/gokuDois.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
         .ftrans{
+            display: block;
             max-width: 400px;
             background-color: rgba(73, 85, 109, 0.555);
             padding: 10px 4px;
             box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.658);
+            line-height: 2em;
         }
         p{
             text-indent: 30px;
@@ -102,6 +136,17 @@
             margin: 0px;
             color: white;
             text-align: center;
+        }
+        footer > p > a{
+            color:aqua;
+;
+            text-decoration: underline;
+        }
+        footer > p > a:visited{
+            color: white;
+        }
+        footer > p > a:hover{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -114,13 +159,13 @@
         <p class="no-branco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptate magnam animi.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptat</p>
     </section>
-    <section class="transp"> <p class="ftrans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptate magnam animi.
+    <section class="transp" id="img1"> <p class="ftrans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptate magnam animi.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptat </p></section>
     <section class="branco"> <p class="no-branco"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptate magnam animi.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At 
     </p>
     </section>
-    <section class="transp">
+    <section class="transp" id="img2">
         <p class="ftrans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At voluptate magnam animi.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At </p>
     </section>
@@ -130,6 +175,8 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident eligendi, odio ex labore totam cumque esse deleniti, modi laborum veritatis excepturi officia temporibus id non sunt laudantium possimus. In! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor sequi assumenda ut. Fuga enim natus veritatis dolorum laborum fugiat, atque quos exercitationem aperiam, iusto odit! At 
         </p>
     </section>
+    <footer>
+        <p><a href="https://github.com/NatReisG" target="_blank" rel="internal">Natan</a></p>
+    </footer>
 </body>
-<footer>Natan</footer>
 </html>
