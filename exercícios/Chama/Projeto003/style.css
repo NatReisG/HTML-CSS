@@ -1,1 +1,116 @@
 @charset "UTF-8";
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: gray;
+}
+body{
+    margin: 0px;
+    /*
+    background-image: url(https://i.natgeofe.com/n/cf1ed3d7-ff55-4ad3-96bd-4fe617b32b97/polarbear-ice-greenland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    */
+
+    background: black center center no-repeat fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{ 
+    background-color: black;
+    text-align: center;
+}
+header > h1{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-size: 2em;
+}
+header > p{
+    padding-bottom: 50px;
+    color: white;
+}
+header a{
+    color: yellowgreen;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: none;
+}
+header a:visited, footer a:visited{
+    color: rgb(226, 223, 43);
+}
+.branco{
+    background-color: white;
+    text-align: left;
+    margin: 0px;
+    box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.658);
+}
+.no-branco{
+    margin: 0px;
+    max-width: 400px;
+}        
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    text-indent: 30px;
+    padding-left: 30px;
+}         
+section#img1{
+    background-image: url(Conteudo/Imagens/goku_petista.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+      /*
+    background-image: url(https://i.natgeofe.com/n/cf1ed3d7-ff55-4ad3-96bd-4fe617b32b97/polarbear-ice-greenland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    */
+}
+section#img2{
+    background-image: url(Conteudo/Imagens/gokuDois.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.ftrans{
+    display: block;
+    max-width: 400px;
+    background-color: rgba(73, 85, 109, 0.555);
+    padding: 10px 4px;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.658);
+    line-height: 2em;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer > a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
