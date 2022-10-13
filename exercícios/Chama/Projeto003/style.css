@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
@@ -13,6 +16,7 @@
 html, body{
     min-height: 100vh;
     background-color: gray;
+    font-family: var(--fonte1);
 }
 body{
     margin: 0px;
@@ -39,7 +43,8 @@ header > h1{
     padding-top: 50px;
     /*text-transform: uppercase;*/
     font-variant: small-caps;
-    font-size: 2em;
+    font-size: 10vw;
+    font-family: var(--fonte2);
 }
 header > p{
     padding-bottom: 50px;
@@ -72,6 +77,8 @@ section{
     line-height: 2em;
     text-indent: 30px;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
 }         
 section#img1{
     background-image: url(Conteudo/Imagens/goku_petista.png);
@@ -95,10 +102,10 @@ section#img2{
     background-attachment: fixed;
 }
 .ftrans{
-    display: block;
+    display: inline-block;
     max-width: 400px;
     background-color: rgba(73, 85, 109, 0.555);
-    padding: 10px 4px;
+    padding: 10px 10px;
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.658);
     line-height: 2em;
 }
