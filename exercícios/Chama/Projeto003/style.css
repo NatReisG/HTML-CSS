@@ -69,19 +69,19 @@ header a:visited, footer a:visited{
 }
 .no-branco{
     margin: 0px;
-    max-width: 400px;
+    display: inline-block;
+    padding: 10px 10px 2em 10px;
 }        
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    text-indent: 30px;
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 2vw;
 }         
 section#img1{
-    background-image: url(Conteudo/Imagens/goku_petista.png);
+    background-image: url(Conteudo/Imagens/joaninha.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -95,7 +95,7 @@ section#img1{
     */
 }
 section#img2{
-    background-image: url(Conteudo/Imagens/gokuDois.jpg);
+    background-image: url(Conteudo/Imagens/poema.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -103,7 +103,6 @@ section#img2{
 }
 .ftrans{
     display: inline-block;
-    max-width: 400px;
     background-color: rgba(73, 85, 109, 0.555);
     padding: 10px 10px;
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.658);
