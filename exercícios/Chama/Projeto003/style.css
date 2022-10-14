@@ -80,12 +80,15 @@ section{
     font-family: var(--fonte3);
     font-size: 2vw;
 }         
-section#img1{
-    background-image: url(Conteudo/Imagens/joaninha.jpeg);
+.transp{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+section#img1{
+    background-image: url(Conteudo/Imagens/joaninha.jpeg);
+
       /*
     background-image: url(https://i.natgeofe.com/n/cf1ed3d7-ff55-4ad3-96bd-4fe617b32b97/polarbear-ice-greenland.jpg);
     background-repeat: no-repeat;
@@ -96,10 +99,6 @@ section#img1{
 }
 section#img2{
     background-image: url(Conteudo/Imagens/poema.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 .ftrans{
     display: inline-block;
@@ -107,6 +106,10 @@ section#img2{
     padding: 10px 10px;
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.658);
     line-height: 2em;
+    color: white;
+}
+section.ftrans > p{
+    box-shadow: 2px 2px 0px black;
 }
 footer{
     background-color: black;
