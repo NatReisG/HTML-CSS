@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        th, tr, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Melhores filmes
+        </caption>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Integrantes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </thead>
+        <tfoot>
+            <th scope="row" colspan="4">Melhor Filme</th>
+            <td>O lobo de wallstreet</td>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Mulheres</th>
+            </tr>
+            <tr>
+                <td>Ana Maria Santos</td>
+                <td>Cube da Luta</td>
+                <td>Inception</td>
+                <td>A mesa redonda</td>
+            </tr>
+            <tr>
+                <td>Joana Talvez</td>
+                <td>JoJo's Bizarre Adventure</td>
+                <td>Bleach</td>
+                <td>Os oito odiados</td>
+            </tr>
+            <tr>
+                <td>Rafaela</td>
+                <td>Todo mundo em pânico</td>
+                <td>Deu a louca na chapeuzinho</td>
+                <td>Todo mundo em pânico 2</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Homens</th>
+            </tr>
+            <tr>
+                <td>Natan</td>
+                <td>O lobo de wallstreet</td>
+                <td>Fome de poder</td>
+                <td>Um senho estagiário</td>
+            </tr>
+            <tr>
+                <td>Caleb</td>
+                <td>Sherlock Homes</td>
+                <td>O corvo</td>
+                <td>Romeu e Julieta</td>
+            </tr>
+            <tr>
+                <td>Jean</td>
+                <td>Homem Aranha</td>
+                <td>O incrivel hulk</td>
+                <td>Piratas do caribe</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

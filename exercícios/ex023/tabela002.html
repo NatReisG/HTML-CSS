@@ -5,12 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela grande</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.712);
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .number{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){ /* 2n = even; 2n-1 = odd */
+            background-color: rgba(128, 128, 128, 0.384);
+        }
+        p{
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <!--
         Anatomia tabelas grandes
                 TABLE
+            CAPTION
             THEAD
                 tr, td, th
             TBODY
@@ -18,5 +54,95 @@
             TFOOT
             
     -->
+    <table>
+        <caption>População de quatro unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 75px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">12 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">4 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="Number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="Number">12 000 000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">12 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">4 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="Number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="Number">12 000 000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">12 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">4 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="Number">3 000 000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="Number">12 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="number"><strong>25 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias <br> voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit doloreLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat esse tempore illo, distinctio architecto. Assumenda adipisci, alias voluptatibus quod exercitationem ut ea sed quisquam perferendis itaque. Eveniet, reprehenderit dolore</p>
 </body>
 </html>
