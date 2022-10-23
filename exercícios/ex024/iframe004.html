@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        iframe{
+            height: 500px;
+            width: 99vw;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- quando uma sandox rece sandbox o iframe nega qualquer capitura de dados em inputs -->
+    <!-- Sandbox="sandbox" nega todos os tipos de captura-->
+    <!-- no-referrer nega qualquer capitura de dados voluntárias -->
+    <!-- caso queira permitir capitura com sites de mesma origem (servidor) use 'allow-same-origin' -->
+</head>
+<body>
+    <h1>Site com cadastro com iframe</h1>
+    <iframe src="pagoo2.html" sandbox="sandbox" referrerpolicy="allow-same-origin allow-forms allow-scripts"></iframe>
+</body>
+</html>

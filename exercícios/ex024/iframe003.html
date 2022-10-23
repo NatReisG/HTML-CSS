@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginas iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            height: 450px;
+            width: 99vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Páginas em um iframe</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus, perferendis, consequuntur blanditiis architecto mollitia aut sapiente quasi laborum facere itaque odit aliquam, voluptates deserunt assumenda. Ratione asperiores fugiat laudantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde at quo voluptatibus sequi deleniti quod nam architecto! Animi totam perspiciatis repellat cumque nostrum magnam. Ab nisi fugiat recusandae fuga!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque debitis consectetur id quo quis voluptates nihil amet ullam, veniam inventore aspernatur ex quidem esse culpa maxime dolor, eaque repudiandae!
+    </p>
+    <ul>
+        <li><a href="paginas/pag001.html" target="frame">Página 1</a></li>
+        <li><a href="paginas/tabela001.html" target="frame">Página 2</a></li>
+        <li><a href="#">Página 3</a></li>
+    </ul>
+    <iframe srcdoc="<h1>Escoha uma das opções acima</h1>" name="frame" frameborder="0"></iframe>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus, perferendis, consequuntur blanditiis architecto mollitia aut sapiente quasi laborum facere itaque odit aliquam, voluptates deserunt assumenda. Ratione asperiores fugiat laudantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde at quo voluptatibus sequi deleniti quod nam architecto! Animi totam perspiciatis repellat cumque nostrum magnam. Ab nisi fugiat recusandae fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque debitis consectetur id quo quis voluptates nihil amet ullam, veniam inventore aspernatur ex quidem esse culpa maxime dolor, eaque repudiandae!
+    </p>
+</body>
+</html>
