@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="dados.php" method="get">
+        <p><label for="inome">Nome:</label>
+            <input type="nome" id="inome" required maxlength="35" autocapitalize="name" placeholder="Nome completo">
+        </p>
+        <p><label for="imedia">Média:</label>
+        <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" value="5" step="0.1">
+        </p>
+        
+        <p><label for="imes">Periodo letivo: </label>
+        <input type="month" name="mes" id="imes" value="2022-10" required>
+        </p>
+        
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia" required>
+        </p>
+
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora" required value="12:00">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
