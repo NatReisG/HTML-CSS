@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css" media="all">
-    <link rel="stylesheet" href="estilopaisagem/style.css" media="screen and (orientation: landscape)">
-    <link rel="stylesheet" href="estilohorizontal/style.css" media="screen and (orientation: portrait)">
     <title>Document</title>
+    <style>
+        /* Gerais */
+        @media all{
+            *{ 
+                padding: 0px;
+                margin: 0px;
+            }
+            }
+            html, body{
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 140, 255, 0.733);
+            }
+            h1{
+                color: white;
+                text-shadow: 2px 2px 0px black;
+            }
+        }
+        /* Paisagem */
+        @media screen and (orientation: landscape) {
+            body{
+                background-image: url(../img/cev-portrait.jpg.jpg);
+                background-position: center bottom;
+            }
+        }
+        /* Retrato */
+        @media screen and (orientation: portrait){
+            body{
+                
+                background-image: url(../img/cev-landscape.jpg.jpg);
+                background-position: bottom left;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendendo paisagem e retrato</h1>
