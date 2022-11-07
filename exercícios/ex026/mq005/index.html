@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Query</h1>
+        <span class="material-icons md-36" onclick="clickMenu()">menu</span>
+        <menu id="itens"> 
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a dolores molestias libero itaque sunt saepe nobis, commodi voluptatibus cumque eligendi vitae odio asperiores id beatae maxime qui voluptatum dolorem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, omnis? Voluptatibus rerum dolorum odit quae nihil quia itaque accusamus harum, assumenda accusantium? Optio ipsum nulla quisquam amet, delectus tempora consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus veritatis rem dolorum ex odit iure saepe inventore nobis eius eveniet consectetur autem, placeat, voluptas ipsum provident natus accusantium magni?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a dolores molestias libero itaque sunt saepe nobis, commodi voluptatibus cumque eligendi vitae odio asperiores id beatae maxime qui voluptatum dolorem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, omnis? Voluptatibus rerum dolorum odit quae nihil quia itaque accusamus harum, assumenda accusantium? Optio ipsum nulla quisquam amet, delectus tempora consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius ipsa neque quam, aperiam sunt voluptate voluptatem doloribus facilis. Nihil qui eos animi officiis harum temporibus aliquam magni accusantium minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima laborum iste temporibus animi, modi aliquam veritatis nemo quis ipsa quasi nobis earum libero esse tenetur alias sequi cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit explicabo modi possimus voluptates, vel nostrum saepe eaque doloremque eligendi dicta debitis iure quisquam quaerat dolore, dolorum, optio molestiae voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque molestiae in facilis natus autem, ullam voluptatem quo iure veritatis, accusamus saepe, aliquam sint sed repudiandae. Saepe maiores dolor ex?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else{ 
+            itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
